@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: whitesmoke;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: green;
+            color: white;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px black;
+            flex: 1 1 calc(25% - 32px);
+            max-width: calc(25% - 32px);
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 calc(50% - 32px);
+                max-width: calc(50% - 32px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                flex: 1 1 100%; 
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">At UoK, you can choose from our wide range of industry-relevant and globally recognised academic and professional programmes. These include undergraduate, graduate, professional, language, and executive programmes in fields such as Business Information Technology,</div>
+        <div class="card">At UoK, you can choose from our wide range of industry-relevant and globally recognised academic and professional programmes. These include undergraduate, graduate, professional, language, and executive programmes in fields such as Business Information Technology,</div>
+        <div class="card">At UoK, you can choose from our wide range of industry-relevant and globally recognised academic and professional programmes. These include undergraduate, graduate, professional, language, and executive programmes in fields such as Business Information Technology,</div>
+        <div class="card">At UoK, you can choose from our wide range of industry-relevant and globally recognised academic and professional programmes. These include undergraduate, graduate, professional, language, and executive programmes in fields such as Business Information Technology,</div>
+        <div class="card">At UoK, you can choose from our wide range of industry-relevant and globally recognised academic and professional programmes. These include undergraduate, graduate, professional, language, and executive programmes in fields such as Business Information Technology,</div>
+        <div class="card">At UoK, you can choose from our wide range of industry-relevant and globally recognised academic and professional programmes. These include undergraduate, graduate, professional, language, and executive programmes in fields such as Business Information Technology,</div>
+        <div class="card">At UoK, you can choose from our wide range of industry-relevant and globally recognised academic and professional programmes. These include undergraduate, graduate, professional, language, and executive programmes in fields such as Business Information Technology,</div>
+        <div class="card">At UoK, you can choose from our wide range of industry-relevant and globally recognised academic and professional programmes. These include undergraduate, graduate, professional, language, and executive programmes in fields such as Business Information Technology,</div>
+    </div>
+</body>
+</html>
